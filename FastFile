@@ -21,33 +21,33 @@ platform :ios do
 	gym(scheme: 'Dev', 
 	    export_method: 'development',
 	    configuration: "dev",
-            workspace: "FansLive Staff.xcworkspace",
+            workspace: "xcode project.xcworkspace",
 	    silent: true,
 	    clean: true, 
 	    output_directory: "./TestBuilds/", 
-	    output_name: "FL_staff_dev.ipa")
+	    output_name: "app_name_dev.ipa")
   end
 
   lane :qa do
 	gym(scheme: 'QA', 
 	    export_method: 'development', 
 	    configuration: "QA",
-	    workspace: "FansLive Staff.xcworkspace", 
+	    workspace: "xcode project.xcworkspace", 
 	    silent: true,
 	    clean: true,
 	    output_directory: "./TestBuilds/", 
-	    output_name: "FL_staff_qa.ipa")
+	    output_name: "app_name_qa.ipa")
   end
 
    lane :uat do
 	gym(scheme: 'UAT', 
 	    export_method: 'development', 
 	    configuration: "UAT",
-	    workspace: "FansLive Staff.xcworkspace", 
+	    workspace: "xcode project.xcworkspace", 
 	    silent: true,
 	    clean: true,
 	    output_directory: "./TestBuilds/", 
-	    output_name: "FL_staff_uat.ipa")
+	    output_name: "app_name_uat.ipa")
   end
 
 end
